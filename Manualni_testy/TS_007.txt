@@ -1,0 +1,58 @@
+TS_007 – Funkčnost vybrání roku z drop-down seznamu v záložce “Kvalita výuky“
+	Popis: 
+		Testovací sada na otestování funkčnosti drop-down seznamu pro výběr roku k zobrazení vhodných hodnocení kvality výuky
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+		3.	Úspěšné přihlášení se, tím se URL stránky změní na “stag.utb.cz/portal“
+		4.	Kliknutí na “Kvalita výuky“ v hlavní liště, tím se URL stránky změní na “stag.utb.cz/portal/studium/kvalita-vyuky“
+		5.	V drop-down seznamu je v základu nastaveno “2022/2023“ a jsou tak zobrazeny hodnocení kvality výuky pro školní rok 2022/2023
+
+	Seznam testovacích případů:
+		TC_007_001 – Rok 2022/2023
+		TC_007_002 – Rok 2021/2022
+		TC_007_003 – Rok 2020/2021
+
+	Post-conditions:
+		3.	Zavření Chrome
+
+
+___________________________________________________________________________________________________________________________________
+
+TC_007_001 – Rok 2022/2023
+	Popis: 
+		Testuje se, že po výběru “2022/2023“ v drop-down seznamu nedojde žádné změně
+
+	Testovací kroky:
+		1.	V drop-down seznamu pro semestr vybereme “2022/2023“
+		2.	Kontrola, že se v seznamu zůstalo “2022/2023“
+		3.	Kontrola, že stránka zobrazuje hodnocení kvality výuky pro školní rok 2022/2023
+
+	Očekávaný výsledek:
+		Po nastavení “2022/2023“ v drop-down seznamu mají být zobrazeny hodnocení kvality výuky pro školní rok 2022/2023
+
+TC_007_002 – Rok 2021/2022
+	Popis: 
+		Testuje se, že po výběru “2021/2022“ v drop-down seznamu se zobrazí hodnocení kvality výuky pro školní rok 2021/2022
+
+	Testovací kroky:
+		1.	V drop-down seznamu pro semestr vybereme “2021/2022“
+		2.	Kontrola, že se v seznamu nastavilo “2021/2022“
+		3.	Kontrola, že stránka zobrazuje hodnocení kvality výuky pro školní rok 2021/2022
+
+	Očekávaný výsledek:
+		Po nastavení “2021/2022“ v drop-down seznamu mají být zobrazeny hodnocení kvality výuky pro školní rok 2021/2022
+
+TC_007_003 – Rok 2020/2021
+	Popis: 
+		Testuje se, že po výběru “2020/2021“ v drop-down seznamu se zobrazí hodnocení kvality výuky pro školní rok 2020/2021
+
+	Testovací kroky:
+		1.	V drop-down seznamu pro semestr vybereme “2020/2021“
+		2.	Kontrola, že se v seznamu nastavilo “2020/2021“
+		3.	Kontrola, že stránka zobrazuje hodnocení kvality výuky pro školní rok 2020/2021
+
+	Očekávaný výsledek:
+		Po nastavení “2020/2021“ v drop-down seznamu mají být zobrazeny hodnocení kvality výuky pro školní rok 2020/2021
+

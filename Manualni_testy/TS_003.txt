@@ -1,0 +1,51 @@
+TS_003 - Další tlačítka na hlavní liště stránky po přihlášení
+	Popis: 
+		Testovací sada na otestování tlačítek na hlavní liště po přihlášení
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+		3.	Úspěšné přihlášení se, tím se URL stránky změní na “stag.utb.cz/portal“
+
+	Seznam testovacích případů:
+		TC_003_001 - Kliknutí na tlačítko “Kvalita výuky“	
+		TC_003_002 – Kliknutí na tlačítko “Moje studium“
+		TC_003_003 - Kliknutí na tlačítko “Změna hesla“ 
+
+	Post-conditions:
+		1.	Zavření Chrome
+
+___________________________________________________________________________________________________________________________________
+
+TC_003_001 - Kliknutí na tlačítko “Kvalita výuky“
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Kvalita výuky“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Kvalita výuky“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/kvalita-vyuky“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Kvalita výuky“  by se měla otevřít stránka s informacemi hodnocení kvality výuky a URL by měla být “stag.utb.cz/portal/studium/kvalita-vyuky“
+
+TC_003_002 – Kliknutí na tlačítko “Moje studium“
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Moje studium“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Moje studium“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Moje studium“  by se měla otevřít stránka s informacemi o studiu a URL by měla být “stag.utb.cz/portal/studium/moje-studium“
+
+TC_003_003 - Kliknutí na tlačítko “Změna hesla“
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Změna hesla“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Změna hesla“
+		2.	Kontrola, že URL adresa stránky je “portal.utb.cz“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Změna hesla“  by se měla otevřít stránka Portál UTB a URL by měla být “portal.utb.cz“

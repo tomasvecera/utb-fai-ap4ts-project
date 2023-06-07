@@ -1,0 +1,118 @@
+TS_002 – Funkce a tlačítka na přihlašovací stránce
+	Popis: 
+		Testovací sada na otestování funkcí a tlačítek na přilašovací stránce
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+
+	Seznam testovacích případů:
+		TC_002_001 – Kliknutí na hlavní logo
+		TC_002_002 – Tlačítko změny jazyka stránky
+		TC_002_003 – Kliknutí na tlačítko “Prohlížení”
+		TC_002_004 – Kliknutí na tlačítko  “Uchazeč”
+		TC_002_005 – Kliknutí na tlačítko  “Absolvent”
+		TC_002_006 – Kliknutí na tlačítko  “Webové služby”
+		TC_002_007 – Kliknutí na tlačítko  “ECTS”
+		TC_002_008 – Kliknutí na tlačítko  “Přihlašovací údaje”
+
+	Post-conditions:
+		1.	Zavření Chrome
+
+___________________________________________________________________________________________________________________________________
+
+
+TC_002_001 – Kliknutí na hlavní logo
+	Popis: 
+		Testuje se, jestli po kliknutí na hlavní logo dojde k otevření univerzitní stránky
+
+	Testovací kroky:
+		1.	Klikneme na logo s nápisem “Univerzita Tomáše Bati ve Zlíně“
+		2.	Klikneme na nově otevřenou stránku na nové kartě
+		3.	Kontrola, že URL této stránky je “utb.cz“
+
+	Očekávaný výsledek:
+		Po kliknutí na logo by se měla otevřít nová karta se stránkou Univerzity Tomáš Bati ve Zlíně a URL “utb.cz“
+
+TC_002_002 – Tlačítko změny jazyka stránky
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko pro změnu jazyka dojde ke změnění jazyka
+	
+	Pre-conditions:
+		1.	Jazyk je nastaven na češtinu	
+
+	Testovací kroky:
+		1.	Kontrola, že je stránka v češtině
+		2.	Klikneme na tlačítko pro změnu jazyka, je na něm nápis “English“
+		3.	Kontrola, že je stránka v angličtině
+		4.	Klikneme na tlačítko pro změnu jazyka, je na něm nápis “Česky“
+		5.	Kontrola, že je stránka v češtině
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko by se měl jazyk měnit mezi češtinou a angličtinou
+
+TC_002_003 – Kliknutí na tlačítko “Prohlížení”
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Prohlížení“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Prohlížení“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/prohlizeni.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Prohlížení“  by se měla otevřít stránka Prohlížení IS/STAG s URL “stag.utb.cz/portal/studium/prohlizeni.html“
+
+TC_002_004 – Kliknutí na tlačítko  “Uchazeč”
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Uchazeč“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Uchazeč“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/uchazec“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Uchazeč“  by se měla otevřít stránka s URL “stag.utb.cz/portal/studium/uchazec“
+
+TC_002_005 – Kliknutí na tlačítko  “Absolvent”
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Absolvent“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Absolvent“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/absolvent“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Absolvent“  by se měla otevřít stránka Klub Absolventů s URL “stag.utb.cz/portal/studium/absolvent“
+
+TC_002_006 – Kliknutí na tlačítko  “Webové služby”
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Webové služby“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Webové služby“
+		2.	Kontrola, že URL adresa stránky je “stag-ws.utb.cz/ws/web/“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Webové služby“  by se měla otevřít stránka Modul webových služeb IS/STAG s URL “stag-ws.utb.cz/ws/web/“
+
+TC_002_007 – Kliknutí na tlačítko  “ECTS”
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “ECTS“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “ECTS“
+		2.	Kontrola, že URL adresa stránky je “portal2.utb.cz/portal/studium/uchazec/ects-prijezdy.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “ECTS“  by se měla otevřít stránka ECTS - Příjezdy studentů na krátkodobý pobyt s URL “portal2.utb.cz/portal/studium/uchazec/ects-prijezdy.html“
+
+TC_002_008 – Kliknutí na tlačítko  “Přihlašovací údaje”
+	Popis: 
+		Testuje se, jestli po kliknutí na tlačítko “Přihlašovací údaje“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na tlačítko s nápisem “Přihlašovací údaje“
+		2.	Kontrola, že URL adresa stránky je “user.utb.cz“
+
+	Očekávaný výsledek:
+		Po kliknutí na tlačítko “Přihlašovací údaje“  by se měla otevřít stránka pro resetování hesla s URL “user.utb.cz“

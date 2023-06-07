@@ -1,0 +1,102 @@
+TS_001 – Funkce přihlášení
+	Popis: 
+		Testovací sada na otestování přihlášení
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+
+	Seznam testovacích případů:
+		TC_001_001 – Prázdné (nezadané) přihlašovací údaje
+		TC_001_002 – Chybné přihlašovací údaje
+		TC_001_003 – Správné jméno a nesprávné heslo v přihlašovacích údajích
+		TC_001_004 – Správné heslo a nesprávné jméno v přihlašovacích údajích
+		TC_001_005 – Správné přihlašovací údaje
+
+	Post-conditions:
+		1.	Zavření Chrome
+
+___________________________________________________________________________________________________________________________________
+
+TC_001_001 - Prázdné (nezadané) přihlašovací údaje
+	Popis: 
+		Testuje se, jestli se přihlášení s nesprávnými přihlašovacími údaji nepovede
+	
+	Pre-conditions:
+		1.	Pole pro uživatelské jméno je prázdné
+		2.	Pole pro heslo je prázdné
+
+	Testovací kroky:
+		1.	Zmáčkneme tlačítko “Přihlásit se“
+		2.	Kontrola, že tlačítko “Přihlásit se“ je viditelné
+
+	Očekávaný výsledek:
+		Přihlášení by nemělo být úspěšné a stránka by měla zůstat beze změny
+
+TC_001_002 – Chybné přihlašovací údaje
+	Popis: 
+		Testuje se, jestli se přihlášení s nesprávnými přihlašovacími údaji nepovede
+	
+	Pre-conditions:
+		1.	Pole pro uživatelské jméno je prázdné
+		2.	Pole pro heslo je prázdné	
+
+	Testovací kroky:
+		1.	Pole pro uživatelské jméno vyplníme nesprávnými údaji
+		2.	Pole pro heslo vyplníme nesprávnými údaji
+		3.	Zmáčkneme tlačítko “Přihlásit se“
+		4.	Kontrola, že tlačítko “Přihlásit se“ je viditelné
+
+	Očekávaný výsledek:
+		Přihlášení by nemělo být úspěšné, stránka by se neměla změnit a nad místem pro přihlášení by se měl objevit červený box s textem “Nepodařilo se vás přihlásit. Pravděpodobně bylo zadáno špatné uživatelské jméno nebo heslo.“
+
+TC_001_003 – Správné jméno a nesprávné heslo v přihlašovacích údajích
+	Popis: 
+		Testuje se, jestli se přihlášení se správným jménem a nesprávným heslem nepovede
+	
+	Pre-conditions:
+		1.	Pole pro uživatelské jméno je prázdné
+		2.	Pole pro heslo je prázdné	
+
+	Testovací kroky:
+		1.	Pole pro uživatelské jméno vyplníme správnými údaji
+		2.	Pole pro heslo vyplníme nesprávnými údaji
+		3.	Zmáčkneme tlačítko “Přihlásit se“
+		4.	Kontrola, že tlačítko “Přihlásit se“ je viditelné
+
+	Očekávaný výsledek:
+		Přihlášení by nemělo být úspěšné, stránka by se neměla změnit a nad místem pro přihlášení by se měl objevit červený box s textem “Nepodařilo se vás přihlásit. Pravděpodobně bylo zadáno špatné uživatelské jméno nebo heslo.“
+
+TC_001_004 – Správné heslo a nesprávné jméno v přihlašovacích údajích
+	Popis: 
+		Testuje se, jestli se přihlášení se správným heslem a nesprávným jménem nepovede
+	
+	Pre-conditions:
+		1.	Pole pro uživatelské jméno je prázdné
+		2.	Pole pro heslo je prázdné	
+
+	Testovací kroky:
+		1.	Pole pro uživatelské jméno vyplníme nesprávnými údaji
+		2.	Pole pro heslo vyplníme správnými údaji
+		3.	Zmáčkneme tlačítko “Přihlásit se“
+		4.	Kontrola, že tlačítko “Přihlásit se“ je viditelné
+
+	Očekávaný výsledek:
+		Přihlášení by nemělo být úspěšné, stránka by se neměla změnit a nad místem pro přihlášení by se měl objevit červený box s textem “Nepodařilo se vás přihlásit. Pravděpodobně bylo zadáno špatné uživatelské jméno nebo heslo.“
+
+TC_001_005 – Správné přihlašovací údaje
+	Popis: 
+		Testuje se, jestli se přihlášení se správnými přihlašovacími údaji povede
+	
+	Pre-conditions:
+		1.	Pole pro uživatelské jméno je prázdné
+		2.	Pole pro heslo je prázdné	
+
+	Testovací kroky:
+		1.	Pole pro uživatelské jméno vyplníme správnými údaji
+		2.	Pole pro heslo vyplníme správnými údaji
+		3.	Zmáčkneme tlačítko “Přihlásit se“
+		4.	Kontrola, že tlačítko “Přihlásit se“ není viditelné
+
+	Očekávaný výsledek:
+		Stránka by se měla změnit a uživatel by měl být přihlášen

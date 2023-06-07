@@ -1,0 +1,229 @@
+TS_004 – Prokliknutí na rozvrh předmětu z hlavní stránky po přihlášení
+	Popis: 
+		Testovací sada na otestování prokliknutí na rozvrh předmětu z hlavní stránky a přihlášeným uživatelem
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+		3.	Úspěšné přihlášení se, tím se URL stránky změní na “stag.utb.cz/portal“
+
+	Seznam testovacích sad:
+		TS_004_001 – Zimní semestr
+			Seznam testovacích případů:
+				TC_004_001_001 – AUEM/AP3EJ
+				TC_004_001_002 – AUIUI/AP3KR
+				TC_004_001_003 – AUIUI/AP3TI
+				TC_004_001_004 – AUPKS/AP3OS
+				TC_004_001_005 – CJV/AJPA3
+				TC_004_001_006 – MUTV/PSAIL
+
+		TS_004_002 – Letní semestr
+			Seznam testovacích případů:
+				TC_004_002_001 – AUBI/AP4EO
+				TC_004_002_002 – AUIUI/AP4AL
+				TC_004_002_003 – AUIUI/AP4ST
+				TC_004_002_004 – AUIUI/AP4TS
+				TC_004_002_005 – AUIUI/AP4TW
+				TC_004_002_006 – AUM/AP4OM
+				TC_004_002_007 – AURP/AP4PS
+				TC_004_002_008 – CJV/AJPA4
+
+	Post-conditions:
+		1.	Zavření Chrome
+
+
+___________________________________________________________________________________________________________________________________
+
+TS_004_001 – Zimní semestr
+	TC_004_001_001 – AUEM/AP3EJ
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUEM/AP3EJ“, tím se vedle zobrazí okno “Elektromagnetické jevy v informatice“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUEM / AP3EJ“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUEM/AP3EJ“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Elektromagnetických jevů v informatice
+
+	TC_004_001_002 – AUIUI/AP3KR
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUIUI/AP3KR“, tím se vedle zobrazí okno “Kryptologie“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUIUI / AP3KR“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUIUI/AP3KR“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Kryptologie
+
+	TC_004_001_003 – AUIUI/AP3TI
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUIUI/AP3TI“, tím se vedle zobrazí okno “Teoretická informatika“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUIUI / AP3TI“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUIUI/AP3TI“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Teoretické informatiky
+
+	TC_004_001_004 – AUPKS/AP3OS
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUPKS/AP3OS“, tím se vedle zobrazí okno “Operační systémy“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUPKS / AP3OS“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUPKS/AP3OS“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Operačních systémů
+
+	TC_004_001_005 – CJV/AJPA3
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “CJV/AJPA3“, tím se vedle zobrazí okno “Cizí jazyk - angličtina“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “CJV / AJPA3“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “CJV/AJPA3“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Angličtiny 3
+
+	TC_004_001_006 – MUTV/PSAIL
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “MUTV/PSAIL“, tím se vedle zobrazí okno “Sportovní aktivity - inline bruslení“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “MUTV / PSAIL“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “MUTV/PSAIL“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Inline bruslení
+
+	TC_004_001_007 – AUPKS/AP3AF
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUPKS/AP3AF“, tím se vedle zobrazí okno “Aplikační frameworky“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUPKS / AP3AF“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUPKS/AP3AF“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Aplikačních framwroků
+
+TS_004_002 – Letní semestr
+	TC_004_002_001 – AUBI/AP4EO
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUBI/AP4EO“, tím se vedle zobrazí okno “Elektrické obvody“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUBI / AP4EO“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUBI/AP4EO“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Elekrických obvodů
+
+	TC_004_002_002 – AUIUI/AP4AL
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUIUI/AP4AL“, tím se vedle zobrazí okno “Algoritmy a datové struktury“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUIUI / AP4AL“
+	
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUIUI/AP4AL“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Algoritmů a datových struktur
+
+	TC_004_002_003 – AUIUI/AP4ST
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUIUI/AP4ST“, tím se vedle zobrazí okno “Softwarové technologie v průmyslu“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUIUI / AP4ST“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUIUI/AP4ST“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Softwarových technologií v průmyslu
+
+	TC_004_002_004 – AUIUI/AP4TS
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUIUI/AP4TS“, tím se vedle zobrazí okno “Testování software“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUIUI / AP4TS“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUIUI/AP4TS“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Testování softwaru
+
+	TC_004_002_005 – AUIUI/AP4TW
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUIUI/AP4TW“, tím se vedle zobrazí okno “Technologie www“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUIUI / AP4TW“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUIUI/AP4TW“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Technologií www
+
+	TC_004_002_006 – AUM/AP4OM
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AUM/AP4OM“, tím se vedle zobrazí okno “Optimalizační metody“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AUM / AP4OM“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AUM/AP4OM“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Optimalizačních metod
+
+	TC_004_002_007 – AURP/AP4PS
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “AURP/AP4PS“, tím se vedle zobrazí okno “Počítačové sítě“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “AURP / AP4PS“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “AURP/AP4PS“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Počítačových sítí
+
+	TC_004_002_008 – CJV/AJPA4
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “CJV/AJPA4“, tím se vedle zobrazí okno “Cizí jazyk - angličtina“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “CJV / AJPA4“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “CJV/AJPA4“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Angličtiny 4
+	
+	TC_004_002_009 – MUTV/PSAPL
+		Popis: 
+			Testuje se, jestli se zobrazí správná stránka s rozvrhem po kliknutí na předmět
+
+		Testovací kroky:
+			1.	Najedeme na nápis “MUTV/PSAPL“, tím se vedle zobrazí okno “Sportovní aktivity - plavání“
+			2.	V zobrazeném okně klikneme na “Rozvrh“
+			3.	Kontrola, že se nám otevřela správná stránka tak, že zkratka předmětu u rozvrhu je “MUTV / PSAPL“
+
+		Očekávaný výsledek:
+			Po najetí myši na nápis “MUTV/PSAPL“ se vedle objeví okno s názvem předmětu, tam po kliknutí na “Rozvrh“ budeme přesměrováni na stránku s rozvrhem Plavání

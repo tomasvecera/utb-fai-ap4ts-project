@@ -1,0 +1,57 @@
+TS_006 – Funkčnost zobrazení studijních výsledků v záložce “Moje studium“ podle výběru semestru v drop-down seznamu
+	Popis: 
+		Testovací sada na otestování funkčnosti drop-down seznamu pro výběr semestru k zobrazení studijních výsledků
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+		3.	Úspěšné přihlášení se, tím se URL stránky změní na “stag.utb.cz/portal“
+		4.	Kliknutí na “Moje studium“ v hlavní liště, tím se URL stránky změní na “ stag.utb.cz/portal/studium/moje-studium“
+		5.	V drop-down seznamu je v základu nastaveno “ZS i LS“ a jsou tak zobrazeny “Výsledky za rok“
+
+	Seznam testovacích případů:
+		TC_006_001 – Zimní semestr
+		TC_006_002 – Letní semestr
+		TC_006_003 – Zimní i letní semestr
+
+	Post-conditions:
+		2.	Zavření Chrome
+
+___________________________________________________________________________________________________________________________________
+
+TC_006_001 – Zimní semestr
+	Popis: 
+		Testuje se, jestli po výběru “ZS“ v drop-down seznamu dojde k zobrazení správných výsledků
+
+	Testovací kroky:
+		1.	V drop-down seznamu pro semestr vybereme “ZS“
+		2.	Kontrola, že se v seznamu nastavilo “ZS“
+		3.	Kontrola, že se nastavilo zobrazení výsledků za zimní semestr tak, že je text nad výsledky “Výsledky za ZS“
+
+	Očekávaný výsledek:
+		Po nastavení “ZS“ v drop-down menu by se měly zobrazovat výsledky za zimní semestr a text nad nimi by měl být “Výsledky za ZS“
+
+TC_006_002 – Letní semestr
+	Popis: 
+		Testuje se, jestli po výběru “LS“ v drop-down seznamu dojde k zobrazení správných výsledků
+
+	Testovací kroky:
+		1.	V drop-down seznamu pro semestr vybereme “LS“
+		2.	Kontrola, že se v seznamu nastavilo “LS“
+		3.	Kontrola, že se nastavilo zobrazení výsledků za letní semestr tak, že je text nad výsledky “Výsledky za LS“
+
+	Očekávaný výsledek:
+		Po nastavení “LS“ v drop-down menu by se měly zobrazovat výsledky za letní semestr a text nad nimi by měl být “Výsledky za LS“
+
+TC_006_003 – Zimní i letní semestr
+	Popis: 
+		Testuje se, jestli po výběru “ZS i LS“ v drop-down seznamu dojde k zobrazení správných výsledků
+
+	Testovací kroky:
+		1.	V drop-down seznamu pro semestr vybereme “ZS i LS“
+		2.	Kontrola, že se v seznamu nastavilo “ZS i LS“
+		3.	Kontrola, že se nastavilo zobrazení výsledků za celý rok tak, že je text nad výsledky “Výsledky za rok“
+
+	Očekávaný výsledek:
+		Po nastavení “ZS i LS“ v drop-down menu by se měly zobrazovat výsledky za celý rok a text nad nimi by měl být “Výsledky za rok“
+

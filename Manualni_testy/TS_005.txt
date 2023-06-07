@@ -1,0 +1,282 @@
+TS_005 – Odkazy na bočním panelu v záložce “Moje studium“
+	Popis: 
+		Testovací sada na otestování odkazů na bočním panelu v záložce “Moje studium“ hlavní lišty
+
+	Pre-conditions: 
+		1.	Otevření vyhledávače Chrome (Verze 112.0.5615.122 (Oficiální sestavení) (64bitový))
+		2.	Přejítí na stránku “stag.utb.cz“
+		3.	Úspěšné přihlášení se, tím se URL stránky změní na “stag.utb.cz/portal“
+		4.	Kliknutí na “Moje studium“ v hlavní liště, tím se URL stránky změní na “ stag.utb.cz/portal/studium/moje-studium“
+
+	Seznam testovacích případů:
+		TC_005_001 - Kliknutí na “Průběh studia“
+		TC_005_002 - Kliknutí na “Vizualizace studia“
+		TC_005_003 - Kliknutí na “Zbývající povinnosti“
+		TC_005_004 - Kliknutí na “Zápis na termíny“
+		TC_005_005 - Kliknutí na “Moje údaje“
+		TC_005_006 - Kliknutí na “Semestrální práce“
+		TC_005_007 - Kliknutí na “Soubory studenta“
+		TC_005_008 - Kliknutí na “Předzápis“
+		TC_005_009 - Kliknutí na “Grafický předzápis“
+		TC_005_010 - Kliknutí na “Kroužkový předzápis“
+		TC_005_011 - Kliknutí na “Burza zápisů“
+		TC_005_012 - Kliknutí na “Témata VŠKP“
+		TC_005_013 - Kliknutí na “Kvalifikační práce“
+		TC_005_014 - Kliknutí na “Kontrola plagiátorství“
+		TC_005_015 - Kliknutí na “Praxe“
+		TC_005_016 - Kliknutí na “ECTS výjezdy“	
+		TC_005_017 - Kliknutí na “ECTS příjezdy“
+		TC_005_018 - Kliknutí na “Hodnocení kvality“
+		TC_005_019 - Kliknutí na “Automatické zprávy“
+		TC_005_020 - Kliknutí na “Upomínky“
+		TC_005_021 - Kliknutí na “Nahlížení do spisu“
+		TC_005_022 - Kliknutí na “Registr dlužníků“
+
+	Post-conditions:
+		2.	Zavření Chrome
+
+___________________________________________________________________________________________________________________________________
+
+
+TC_005_001 - Kliknutí na “Průběh studia“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Průběh studia“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Průběh studia“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/index.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Průběh studia“  by měla stránka zůstat stejná a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/index.html“
+
+TC_005_002 - Kliknutí na “Vizualizace studia“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Vizualizace studia“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Vizualizace studia“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/vizualizace.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Vizualizace studia“  by se měla otevřít stránka s vizualizací studentova studia a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/vizualizace.html“
+
+TC_005_003 - Kliknutí na “Zbývající povinnosti“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Zbývající povinnosti“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Zbývající povinnosti“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/zbyvajici-povinnosti.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Zbývající povinnosti“  by se měla otevřít stránka se zbývajícími povinostmi a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/zbyvajici-povinnosti.html“
+
+TC_005_004 - Kliknutí na “Zápis na termíny“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Zápis na termíny“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Zápis na termíny“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/zkousky.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Zápis na termíny“  by se měla otevřít stránka se zápisem na termíny a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/zkousky.html“
+
+TC_005_005 - Kliknutí na “Moje údaje“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Moje údaje“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Moje údaje“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/moje-udaje.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Moje údaje“  by se měla otevřít stránka s údaji, platbami atd. a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/moje-udaje.html“
+
+TC_005_006 - Kliknutí na “Semestrální práce“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Semestrální práce“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Semestrální práce“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/odevzdavani-praci.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Semestrální práce“  by se měla otevřít stránka pro správu semestrálních prací a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/odevzdavani-praci.html“
+
+TC_005_007 - Kliknutí na “Soubory studenta“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Soubory studenta“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Soubory studenta“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/soubory-studenta.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Soubory studenta“  by se měla otevřít stránka se soubory studenta a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/soubory-studenta.html“
+
+TC_005_008 - Kliknutí na “Předzápis“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Předzápis“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Předzápis“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/predzapis.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Předzápis“  by se měla otevřít stránka k výběru předmětu k zápisu a odzápisu a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/predzapis.html“
+
+TC_005_009 - Kliknutí na “Grafický předzápis“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Grafický předzápis“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Grafický předzápis“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/graficky-predzapis.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Grafický předzápis“  by se měla otevřít stránka k výběru předmětu k zápisu a odzápisu v grafické formě a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/graficky-predzapis.html“
+
+TC_005_010 - Kliknutí na “Kroužkový předzápis“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Kroužkový předzápis“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Kroužkový předzápis“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/krouzkovy-predzapis.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Kroužkový předzápis“  by se měla otevřít stránka k předzápisu kroužku a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/krouzkovy-predzapis.html“
+
+TC_005_011 - Kliknutí na “Burza zápisů“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Burza zápisů“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Burza zápisů“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/burza-zapisu.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Burza zápisů“  by se měla otevřít stránka s burzou zápisů a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/burza-zapisu.html“
+
+TC_005_012 - Kliknutí na “Témata VŠKP“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Témata VŠKP“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Témata VŠKP“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/podklady-vskp.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Témata VŠKP“  by se měla otevřít stránka s tématy kvalifikačních prací a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/podklady-vskp.html“
+
+TC_005_013 - Kliknutí na “Kvalifikační práce“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Kvalifikační práce“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Kvalifikační práce“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/kvalifikacni-prace.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Kvalifikační práce“  by se měla otevřít stránka pro kvalifikační praci a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/kvalifikacni-prace.html“
+
+TC_005_014 - Kliknutí na “Kontrola plagiátorství“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Kontrola plagiátorství“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Kontrola plagiátorství“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/plagiaty.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Kontrola plagiátorství“  by se měla otevřít stránka pro kontrolu plagiátorství u kvalifikační práce a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/plagiaty.html“
+
+TC_005_015 - Kliknutí na “Praxe“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Praxe“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Praxe“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/praxestudent.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Praxe“  by se měla otevřít stránka s praxemi a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/praxestudent.html“
+
+TC_005_016 - Kliknutí na “ECTS výjezdy“	
+	Popis: 
+		Testuje se, jestli po kliknutí na “ECTS výjezdy“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “ECTS výjezdy“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/ects-vyjezdy.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “ECTS výjezdy“  by se měla otevřít stránka s ECTS výjezdy na krátkodobý pobyt a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/ects-vyjezdy.html“
+
+TC_005_017 - Kliknutí na “ECTS příjezdy“
+	Popis: 
+		Testuje se, jestli po kliknutí na “ECTS příjezdy“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “ECTS příjezdy“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/ects-prijezdy.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “ECTS příjezdy“  by se měla otevřít stránka s ECTS příjezdy na krátkodobý pobyt a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/ects-prijezdy.html“
+
+TC_005_018 - Kliknutí na “Hodnocení kvality“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Hodnocení kvality“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Hodnocení kvality“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/hodnoceni-kvality.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Hodnocení kvality“  by se měla otevřít stránka s hodnocením předmětů studentem a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/hodnoceni-kvality.html“
+
+TC_005_019 - Kliknutí na “Automatické zprávy“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Automatické zprávy“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Automatické zprávy“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/automaticke-zpravy.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Automatické zprávy“  by se měla otevřít stránka s nastavením automatického zasílání zpráv a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/automaticke-zpravy.html“
+
+TC_005_020 - Kliknutí na “Upomínky“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Upomínky“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Upomínky“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/reminder.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Upomínky“  by se měla otevřít stránka s upomínkami a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/reminder.html“
+
+TC_005_021 - Kliknutí na “Nahlížení do spisu“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Nahlížení do spisu“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Nahlížení do spisu“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/nahlizeni-do-spisu.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Nahlížení do spisu“  by se měla otevřít stránka pro nahlížení do spisů a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/nahlizeni-do-spisu.html“
+
+TC_005_022 - Kliknutí na “Registr dlužníků“
+	Popis: 
+		Testuje se, jestli po kliknutí na “Registr dlužníků“ dojde k otevření správné stránky
+
+	Testovací kroky:
+		1.	Klikneme na nápis “Registr dlužníků“
+		2.	Kontrola, že URL adresa stránky je “stag.utb.cz/portal/studium/moje-studium/registr-dluzniku.html“
+
+	Očekávaný výsledek:
+		Po kliknutí na “Registr dlužníků“  by se měla otevřít stránka s registrem dlužníků a URL adresa se změnit na  “stag.utb.cz/portal/studium/moje-studium/registr-dluzniku.html“
+
