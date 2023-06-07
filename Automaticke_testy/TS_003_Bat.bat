@@ -1,0 +1,1 @@
+robot -o "TS_003 - Output" -r "TS_003 - Report" -l "TS_003 - Log" "TS_003.robot"

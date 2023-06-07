@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.1 on win32)" generated="20230510 12:23:23.920" rpa="false" schemaversion="3">
+<suite id="s1" name="TS 004 002" source="C:\Users\tomul\Desktop\UTB_FAI_SWI\2.rocnik\4.semestr\Testovani_SW\Projekt\Automaticke testy\TS_004_002.robot">
+<test id="s1-t1" name="TC_004_002_001 – AUBI/AP4EO" line="9">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:23:24.155" endtime="20230510 12:23:24.155"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:23:24.156" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:23:24.155" endtime="20230510 12:23:26.496"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:24.154" endtime="20230510 12:23:26.496"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:26.499" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:23:26.498" endtime="20230510 12:23:27.215"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:27.216" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:23:27.674" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:23:27.942" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:23:27.215" endtime="20230510 12:23:27.942"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:27.943" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:23:27.942" endtime="20230510 12:23:28.939"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:26.498" endtime="20230510 12:23:28.939"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:28.940" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:23:28.940" endtime="20230510 12:23:29.637"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4EO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:29.638" level="INFO">Clicking element '//a[normalize-space()='AUBI/AP4EO']'.</msg>
+<status status="PASS" starttime="20230510 12:23:29.638" endtime="20230510 12:23:30.127"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4EO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:30.129" level="INFO">Clicking element '//div[@id='qtip-16-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:23:30.128" endtime="20230510 12:23:30.934"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AUBI_Predmet}</arg>
+<arg>AUBI / AP4EO</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:23:30.936" level="INFO">Verifying element '//td[contains(text(),'AUBI')]' contains exact text 'AUBI / AP4EO'.</msg>
+<status status="PASS" starttime="20230510 12:23:30.935" endtime="20230510 12:23:31.380"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:23:31.381" endtime="20230510 12:23:33.650"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:24.154" endtime="20230510 12:23:33.650"/>
+</test>
+<test id="s1-t2" name="TC_004_002_002 – AUIUI/AP4AL" line="18">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:23:33.654" endtime="20230510 12:23:33.654"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:23:33.655" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:23:33.654" endtime="20230510 12:23:35.864"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:33.654" endtime="20230510 12:23:35.864"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:35.866" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:23:35.865" endtime="20230510 12:23:36.584"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:36.585" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:23:37.036" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:23:37.306" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:23:36.584" endtime="20230510 12:23:37.306"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:37.307" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:23:37.306" endtime="20230510 12:23:38.095"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:35.865" endtime="20230510 12:23:38.096"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:38.099" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:23:38.098" endtime="20230510 12:23:38.794"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4AL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:38.796" level="INFO">Clicking element '//a[normalize-space()='AUIUI/AP4AL']'.</msg>
+<status status="PASS" starttime="20230510 12:23:38.795" endtime="20230510 12:23:39.269"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4AL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:39.270" level="INFO">Clicking element '//div[@id='qtip-18-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:23:39.270" endtime="20230510 12:23:40.090"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AUIUI_Predmet}</arg>
+<arg>AUIUI / AP4AL</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:23:40.092" level="INFO">Verifying element '//td[contains(text(),'AUIUI')]' contains exact text 'AUIUI / AP4AL'.</msg>
+<status status="PASS" starttime="20230510 12:23:40.091" endtime="20230510 12:23:40.534"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:23:40.535" endtime="20230510 12:23:42.820"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:33.652" endtime="20230510 12:23:42.821"/>
+</test>
+<test id="s1-t3" name="TC_004_002_003 – AUIUI/AP4ST" line="27">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:23:42.824" endtime="20230510 12:23:42.824"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:23:42.825" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:23:42.824" endtime="20230510 12:23:44.850"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:42.823" endtime="20230510 12:23:44.850"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:44.851" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:23:44.851" endtime="20230510 12:23:45.574"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:45.574" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:23:46.028" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:23:46.296" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:23:45.574" endtime="20230510 12:23:46.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:46.297" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:23:46.297" endtime="20230510 12:23:47.168"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:44.850" endtime="20230510 12:23:47.168"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:47.170" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:23:47.169" endtime="20230510 12:23:47.850"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4ST}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:47.851" level="INFO">Clicking element '//a[normalize-space()='AUIUI/AP4ST']'.</msg>
+<status status="PASS" starttime="20230510 12:23:47.851" endtime="20230510 12:23:48.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4ST}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:48.345" level="INFO">Clicking element '//div[@id='qtip-20-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:23:48.345" endtime="20230510 12:23:49.128"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AUIUI_Predmet}</arg>
+<arg>AUIUI / AP4ST</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:23:49.130" level="INFO">Verifying element '//td[contains(text(),'AUIUI')]' contains exact text 'AUIUI / AP4ST'.</msg>
+<status status="PASS" starttime="20230510 12:23:49.129" endtime="20230510 12:23:49.571"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:23:49.572" endtime="20230510 12:23:51.837"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:42.823" endtime="20230510 12:23:51.839"/>
+</test>
+<test id="s1-t4" name="TC_004_002_004 – AUIUI/AP4TS" line="36">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:23:51.842" endtime="20230510 12:23:51.842"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:23:51.843" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:23:51.842" endtime="20230510 12:23:53.893"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:51.842" endtime="20230510 12:23:53.893"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:53.895" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:23:53.895" endtime="20230510 12:23:54.615"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:54.615" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:23:55.070" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:23:55.337" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:23:54.615" endtime="20230510 12:23:55.337"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:55.337" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:23:55.337" endtime="20230510 12:23:56.160"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:53.894" endtime="20230510 12:23:56.160"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:56.162" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:23:56.161" endtime="20230510 12:23:56.823"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4TS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:56.825" level="INFO">Clicking element '//a[normalize-space()='AUIUI/AP4TS']'.</msg>
+<status status="PASS" starttime="20230510 12:23:56.824" endtime="20230510 12:23:57.316"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4TS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:23:57.318" level="INFO">Clicking element '//div[@id='qtip-22-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:23:57.317" endtime="20230510 12:23:58.071"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AUIUI_Predmet}</arg>
+<arg>AUIUI / AP4TS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:23:58.073" level="INFO">Verifying element '//td[contains(text(),'AUIUI')]' contains exact text 'AUIUI / AP4TS'.</msg>
+<status status="PASS" starttime="20230510 12:23:58.073" endtime="20230510 12:23:58.516"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:23:58.517" endtime="20230510 12:24:00.784"/>
+</kw>
+<status status="PASS" starttime="20230510 12:23:51.840" endtime="20230510 12:24:00.785"/>
+</test>
+<test id="s1-t5" name="TC_004_002_005 – AUIUI/AP4TW" line="45">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:24:00.787" endtime="20230510 12:24:00.788"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:24:00.788" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:24:00.788" endtime="20230510 12:24:04.285"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:00.787" endtime="20230510 12:24:04.285"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:04.288" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:24:04.287" endtime="20230510 12:24:05.016"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:05.016" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:24:05.477" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:24:05.745" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:24:05.016" endtime="20230510 12:24:05.745"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:05.746" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:24:05.745" endtime="20230510 12:24:06.582"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:04.287" endtime="20230510 12:24:06.582"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:06.585" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:24:06.583" endtime="20230510 12:24:07.246"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4TW}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:07.248" level="INFO">Clicking element '//a[normalize-space()='AUIUI/AP4TW']'.</msg>
+<status status="PASS" starttime="20230510 12:24:07.247" endtime="20230510 12:24:07.735"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4TW}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:07.737" level="INFO">Clicking element '//div[@id='qtip-24-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:24:07.736" endtime="20230510 12:24:08.560"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AUIUI_Predmet}</arg>
+<arg>AUIUI / AP4TW</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:24:08.562" level="INFO">Verifying element '//td[contains(text(),'AUIUI')]' contains exact text 'AUIUI / AP4TW'.</msg>
+<status status="PASS" starttime="20230510 12:24:08.561" endtime="20230510 12:24:09.003"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:24:09.004" endtime="20230510 12:24:11.268"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:00.787" endtime="20230510 12:24:11.270"/>
+</test>
+<test id="s1-t6" name="TC_004_002_006 – AUM/AP4OM" line="54">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:24:11.272" endtime="20230510 12:24:11.273"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:24:11.273" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:24:11.273" endtime="20230510 12:24:13.334"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:11.272" endtime="20230510 12:24:13.334"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:13.337" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:24:13.336" endtime="20230510 12:24:14.054"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:14.055" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:24:14.509" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:24:14.778" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:24:14.054" endtime="20230510 12:24:14.778"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:14.779" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:24:14.778" endtime="20230510 12:24:15.598"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:13.336" endtime="20230510 12:24:15.598"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:15.600" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:24:15.600" endtime="20230510 12:24:16.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4OM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:16.348" level="INFO">Clicking element '//a[normalize-space()='AUM/AP4OM']'.</msg>
+<status status="PASS" starttime="20230510 12:24:16.348" endtime="20230510 12:24:16.839"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4OM}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:16.841" level="INFO">Clicking element '//div[@id='qtip-26-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:24:16.840" endtime="20230510 12:24:17.680"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AUM_Predmet}</arg>
+<arg>AUM / AP4OM</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:24:17.682" level="INFO">Verifying element '//td[contains(text(),'AUM')]' contains exact text 'AUM / AP4OM'.</msg>
+<status status="PASS" starttime="20230510 12:24:17.681" endtime="20230510 12:24:18.126"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:24:18.127" endtime="20230510 12:24:20.399"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:11.271" endtime="20230510 12:24:20.400"/>
+</test>
+<test id="s1-t7" name="TC_004_002_007 – AURP/AP4PS" line="63">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:24:20.403" endtime="20230510 12:24:20.403"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:24:20.404" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:24:20.403" endtime="20230510 12:24:22.571"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:20.402" endtime="20230510 12:24:22.571"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:22.573" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:24:22.573" endtime="20230510 12:24:23.302"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:23.303" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:24:23.758" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:24:24.026" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:24:23.302" endtime="20230510 12:24:24.026"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:24.027" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:24:24.026" endtime="20230510 12:24:24.877"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:22.572" endtime="20230510 12:24:24.877"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:24.879" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:24:24.878" endtime="20230510 12:24:25.575"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AP4PS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:25.576" level="INFO">Clicking element '//a[normalize-space()='AURP/AP4PS']'.</msg>
+<status status="PASS" starttime="20230510 12:24:25.576" endtime="20230510 12:24:26.066"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AP4PS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:26.067" level="INFO">Clicking element '//div[@id='qtip-28-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:24:26.067" endtime="20230510 12:24:26.828"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_AURP_Predmet}</arg>
+<arg>AURP / AP4PS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:24:26.830" level="INFO">Verifying element '//td[contains(text(),'AURP')]' contains exact text 'AURP / AP4PS'.</msg>
+<status status="PASS" starttime="20230510 12:24:26.829" endtime="20230510 12:24:27.271"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:24:27.272" endtime="20230510 12:24:29.537"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:20.402" endtime="20230510 12:24:29.539"/>
+</test>
+<test id="s1-t8" name="TC_004_002_008 – CJV/AJPA4" line="72">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:24:29.541" endtime="20230510 12:24:29.541"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:24:29.542" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:24:29.541" endtime="20230510 12:24:31.627"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:29.541" endtime="20230510 12:24:31.628"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:31.631" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:24:31.630" endtime="20230510 12:24:32.364"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:32.364" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:24:32.819" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:24:33.088" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:24:32.364" endtime="20230510 12:24:33.088"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:33.089" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:24:33.088" endtime="20230510 12:24:34.055"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:31.629" endtime="20230510 12:24:34.055"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Vitejte}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:34.057" level="INFO">Clicking element '//li[@class=' ']//a[normalize-space()='Vítejte']'.</msg>
+<status status="PASS" starttime="20230510 12:24:34.056" endtime="20230510 12:24:34.721"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AJPA4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:34.722" level="INFO">Clicking element '//a[normalize-space()='CJV/AJPA4']'.</msg>
+<status status="PASS" starttime="20230510 12:24:34.722" endtime="20230510 12:24:35.197"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_AJPA4}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:24:35.199" level="INFO">Clicking element '//div[@id='qtip-30-content']//a[@class='xg_stag_a_ent'][normalize-space()='Rozvrh']'.</msg>
+<status status="PASS" starttime="20230510 12:24:35.198" endtime="20230510 12:24:36.050"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${Text_CJV_Predmet}</arg>
+<arg>CJV / AJPA4</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230510 12:24:36.053" level="INFO">Verifying element '//td[contains(text(),'CJV')]' contains exact text 'CJV / AJPA4'.</msg>
+<status status="PASS" starttime="20230510 12:24:36.051" endtime="20230510 12:24:36.496"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:24:36.497" endtime="20230510 12:24:38.755"/>
+</kw>
+<status status="PASS" starttime="20230510 12:24:29.540" endtime="20230510 12:24:38.756"/>
+</test>
+<status status="PASS" starttime="20230510 12:23:23.921" endtime="20230510 12:24:38.758"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="TS 004 002">TS 004 002</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

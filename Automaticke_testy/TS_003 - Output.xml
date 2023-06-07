@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.1 on win32)" generated="20230510 12:19:54.857" rpa="false" schemaversion="3">
+<suite id="s1" name="TS 003" source="C:\Users\tomul\Desktop\UTB_FAI_SWI\2.rocnik\4.semestr\Testovani_SW\Projekt\Automaticke testy\TS_003.robot">
+<test id="s1-t1" name="TC_003_001 - Kliknutí na tlačítko “Kvalita výuky“" line="9">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:19:55.091" endtime="20230510 12:19:55.092"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:19:55.092" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:19:55.092" endtime="20230510 12:19:57.285"/>
+</kw>
+<status status="PASS" starttime="20230510 12:19:55.091" endtime="20230510 12:19:57.286"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:19:57.288" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:19:57.287" endtime="20230510 12:19:58.010"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:19:58.010" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:19:58.464" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:19:58.730" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:19:58.010" endtime="20230510 12:19:58.730"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:19:58.731" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:19:58.731" endtime="20230510 12:19:59.622"/>
+</kw>
+<status status="PASS" starttime="20230510 12:19:57.287" endtime="20230510 12:19:59.622"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Kvalita_Vyuky}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:19:59.624" level="INFO">Clicking element '//a[@href='/portal/studium/kvalita-vyuky']'.</msg>
+<status status="PASS" starttime="20230510 12:19:59.624" endtime="20230510 12:20:00.399"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL_Kvalita_Vyuky}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230510 12:20:00.623" level="INFO">Current location is 'https://stag.utb.cz/portal/studium/kvalita-vyuky'.</msg>
+<status status="PASS" starttime="20230510 12:20:00.400" endtime="20230510 12:20:00.623"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:20:00.624" endtime="20230510 12:20:03.826"/>
+</kw>
+<status status="PASS" starttime="20230510 12:19:55.090" endtime="20230510 12:20:03.827"/>
+</test>
+<test id="s1-t2" name="TC_003_002 – Kliknutí na tlačítko “Moje studium“" line="16">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:20:03.832" endtime="20230510 12:20:03.832"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:20:03.833" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:20:03.832" endtime="20230510 12:20:06.867"/>
+</kw>
+<status status="PASS" starttime="20230510 12:20:03.831" endtime="20230510 12:20:06.867"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:06.869" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:20:06.869" endtime="20230510 12:20:07.589"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:07.589" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:20:08.040" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:20:08.308" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:20:07.589" endtime="20230510 12:20:08.308"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:08.309" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:20:08.308" endtime="20230510 12:20:09.114"/>
+</kw>
+<status status="PASS" starttime="20230510 12:20:06.868" endtime="20230510 12:20:09.114"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Moje_Studium}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:09.116" level="INFO">Clicking element '//a[@href='/portal/studium/moje-studium']'.</msg>
+<status status="PASS" starttime="20230510 12:20:09.115" endtime="20230510 12:20:10.157"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL_Moje_Studium}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230510 12:20:10.379" level="INFO">Current location is 'https://stag.utb.cz/portal/studium/moje-studium'.</msg>
+<status status="PASS" starttime="20230510 12:20:10.158" endtime="20230510 12:20:10.379"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:20:10.380" endtime="20230510 12:20:13.173"/>
+</kw>
+<status status="PASS" starttime="20230510 12:20:03.830" endtime="20230510 12:20:13.174"/>
+</test>
+<test id="s1-t3" name="TC_003_003 - Kliknutí na tlačítko “Změna hesla“" line="23">
+<kw name="Open Browser And Enter Page" library="Keywords">
+<arg>${BrowserChrome}</arg>
+<arg>${URL_Stag}</arg>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20230510 12:20:13.177" endtime="20230510 12:20:13.177"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230510 12:20:13.177" level="INFO">Opening browser 'Chrome' to base url 'https://stag.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:20:13.177" endtime="20230510 12:20:15.277"/>
+</kw>
+<status status="PASS" starttime="20230510 12:20:13.176" endtime="20230510 12:20:15.277"/>
+</kw>
+<kw name="Login to stag" library="Keywords">
+<arg>${Value_Login}</arg>
+<arg>${Value_Password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Name}</arg>
+<arg>${Login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:15.279" level="INFO">Typing text 't_vecera' into text field '//input[@id='loginName']'.</msg>
+<status status="PASS" starttime="20230510 12:20:15.279" endtime="20230510 12:20:15.997"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${Input_Password}</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:15.998" level="INFO">Typing password into text field '//input[@id='loginPassword']'.</msg>
+<msg timestamp="20230510 12:20:16.449" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230510 12:20:16.716" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230510 12:20:15.997" endtime="20230510 12:20:16.716"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:16.717" level="INFO">Clicking element '//input[@value='Přihlásit se']'.</msg>
+<status status="PASS" starttime="20230510 12:20:16.716" endtime="20230510 12:20:17.567"/>
+</kw>
+<status status="PASS" starttime="20230510 12:20:15.279" endtime="20230510 12:20:17.567"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Zmena_Hesla}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230510 12:20:17.569" level="INFO">Clicking element '//ul[contains(@class,'app_menubar level_1')]//a[contains(text(),'Změna hesla')]'.</msg>
+<status status="PASS" starttime="20230510 12:20:17.568" endtime="20230510 12:20:19.050"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>${URL_Zmena_Hesla}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20230510 12:20:19.273" level="INFO">Current location is 'https://portal.utb.cz/'.</msg>
+<status status="PASS" starttime="20230510 12:20:19.051" endtime="20230510 12:20:19.273"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230510 12:20:19.274" endtime="20230510 12:20:21.536"/>
+</kw>
+<status status="PASS" starttime="20230510 12:20:13.176" endtime="20230510 12:20:21.538"/>
+</test>
+<status status="PASS" starttime="20230510 12:19:54.858" endtime="20230510 12:20:21.540"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="TS 003">TS 003</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
