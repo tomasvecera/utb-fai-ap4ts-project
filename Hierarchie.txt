@@ -1,0 +1,79 @@
+						Hierarchie
+
+
+
+TS_001 – Funkce příhlášení
+	TC_001_001 – Prázdné (nezadané) přihlašovací údaje
+	TC_001_002 – Chybné přihlašovací údaje
+	TC_001_003 – Správné jméno a nesprávné heslo v přihlašovacích údajích
+	TC_001_004 – Správné heslo a nesprávné jméno v přihlašovacích údajích
+	TC_001_005 – Správné přihlašovací údaje
+
+TS_002 – Funkce a tlačítka na přihlašovací stránce
+	TC_002_001 – Kliknutí na hlavní logo
+	TC_002_002 – Tlačítko změny jazyka stránky
+	TC_002_003 – Kliknutí na tlačítko “Prohlížení”
+	TC_002_004 – Kliknutí na tlačítko  “Uchazeč”
+	TC_002_005 – Kliknutí na tlačítko  “Absolvent”
+	TC_002_006 – Kliknutí na tlačítko  “Webové služby”
+	TC_002_007 – Kliknutí na tlačítko  “ECTS”
+	TC_002_008 – Kliknutí na tlačítko  “Přihlašovací údaje”
+
+TS_003 – Další tlačítka na hlavní liště stránky po přihlášení
+	TC_003_001 – Kliknutí na tlačítko “Moje studium“
+	TC_003_002 - Kliknutí na tlačítko “Kvalita výuky“
+	TC_003_003 - Kliknutí na tlačítko “Změna hesla“ 
+
+TS_004 – Prokliknutí na rozvrh předmětu z hlavní stránky po přihlášení
+	TS_004_001 – Zimní semestr
+		TC_004_001_001 – AUEM/AP3EJ
+		TC_004_001_002 – AUIUI/AP3KR
+		TC_004_001_003 – AUIUI/AP3TI
+		TC_004_001_004 – AUPKS/AP3OS
+		TC_004_001_005 – CJV/AJPA3
+		TC_004_001_006 – MUTV/PSAIL
+		TC_004_001_007 – AUPKS/AP3AF
+	TS_004_002 – Letní semestr
+		TC_004_002_001 – AUBI/AP4EO
+		TC_004_002_002 – AUIUI/AP4AL
+		TC_004_002_003 – AUIUI/AP4ST
+		TC_004_002_004 – AUIUI/AP4TS
+		TC_004_002_005 – AUIUI/AP4TW
+		TC_004_002_006 – AUM/AP4OM
+		TC_004_002_007 – AURP/AP4PS
+		TC_004_002_008 – CJV/AJPA4
+		TC_004_002_009 – MUTV/PSAPL
+
+TS_005 – Odkazy na bočním panelu v záložce “Moje studium“
+	TC_005_001 - Kliknutí na “Průběh studia“
+	TC_005_002 - Kliknutí na “Vizualizace studia“
+	TC_005_003 - Kliknutí na “Zbývající povinnosti“
+	TC_005_004 - Kliknutí na “Zápis na termíny“
+	TC_005_005 - Kliknutí na “Moje údaje“
+	TC_005_006 - Kliknutí na “Semestrální práce“
+	TC_005_007 - Kliknutí na “Soubory studenta“
+	TC_005_008 - Kliknutí na “Předzápis“
+	TC_005_009 - Kliknutí na “Grafický předzápis“
+	TC_005_010 - Kliknutí na “Kroužkový předzápis“
+	TC_005_011 - Kliknutí na “Burza zápisů“
+	TC_005_012 - Kliknutí na “Témata VŠKP“
+	TC_005_013 - Kliknutí na “Kvalifikační práce“
+	TC_005_014 - Kliknutí na “Kontrola plagiátorství“
+	TC_005_015 - Kliknutí na “Praxe“
+	TC_005_016 - Kliknutí na “ECTS výjezdy“
+	TC_005_017 - Kliknutí na “ECTS příjezdy“
+	TC_005_018 - Kliknutí na “Hodnocení kvality“
+	TC_005_019 - Kliknutí na “Automatické zprávy“
+	TC_005_020 - Kliknutí na “Upomínky“
+	TC_005_021 - Kliknutí na “Nahlížení do spisu“
+	TC_005_022 - Kliknutí na “Registr dlužníků“
+
+TS_006 – Funkčnost zobrazení studijních výsledků v záložce “Moje studium“ podle výběru semestru v drop-down seznamu
+	TC_006_001 – Zimní semestr
+	TC_006_002 – Letní semestr
+	TC_006_003 – Zimní i letní semestr
+
+TS_007 – Funkčnost vybrání roku z drop-down seznamu v záložce “Kvalita výuky“
+	TC_007_001 – Rok 2022/2023
+	TC_007_002 – Rok 2021/2022
+	TC_007_003 – Rok 2020/2021
